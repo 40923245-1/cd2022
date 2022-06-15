@@ -127,51 +127,51 @@ vertical: body pane on the botton</t>
 <t tx="leo.20220314203825.13">&lt;section&gt;
     &lt;h2&gt;W3&lt;/h2&gt;
     &lt;p&gt;
-        Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at &lt;a href="https://slides.com" target="_blank"&gt;https://slides.com&lt;/a&gt;.
+        分組後, 各組即進入利用 NX1980 繪製 uArm 機械手臂的協同設計階段 &lt;a href="https://40923245-1.github.io/cd2022/content/w3.html" target="_blank"&gt;分配作業&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
 </t>
 <t tx="leo.20220314203825.14">&lt;section&gt;
-    &lt;h2&gt;W4&lt;/h2&gt;
+    &lt;h2&gt;W6&lt;/h2&gt;
     &lt;p&gt;
-        reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
 </t>
 <t tx="leo.20220314203825.15">&lt;section&gt;
-    &lt;h2&gt;W5&lt;/h2&gt;
+    &lt;h2&gt;W7&lt;/h2&gt;
     &lt;p&gt;
-        reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+        分組後, 各組即進入利用 NX1980 繪製 uArm 機械手臂的協同設計階段 &lt;a href="https://40923245-1.github.io/cd2022/content/w3.html" target="_blank"&gt;分配作業&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
 </t>
 <t tx="leo.20220314203825.16">&lt;section&gt;
-    &lt;h2&gt;W6&lt;/h2&gt;
+    &lt;h2&gt;W8&lt;/h2&gt;
     &lt;p&gt;
-        reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 </t>
 <t tx="leo.20220314203825.17">&lt;section&gt;
-    &lt;h2&gt;W7&lt;/h2&gt;
+    &lt;h2&gt;W10&lt;/h2&gt;
     &lt;p&gt;
-        reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 </t>
 <t tx="leo.20220314203825.18">&lt;section&gt;
-    &lt;h2&gt;W8&lt;/h2&gt;
+    &lt;h2&gt;W11&lt;/h2&gt;
     &lt;p&gt;
-        reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+      依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;</t>
 <t tx="leo.20220314203825.19">&lt;section&gt;
-    &lt;h2&gt;W10&lt;/h2&gt;
+    &lt;h2&gt;W12&lt;/h2&gt;
     &lt;p&gt;
-        reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
@@ -181,33 +181,33 @@ vertical: body pane on the botton</t>
 @others
 &lt;/html&gt;</t>
 <t tx="leo.20220314203825.20">&lt;section&gt;
-    &lt;h2&gt;W11&lt;/h2&gt;
+    &lt;h2&gt;W13&lt;/h2&gt;
     &lt;p&gt;
-        reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
 </t>
 <t tx="leo.20220314203825.21">&lt;section&gt;
-    &lt;h2&gt;W12&lt;/h2&gt;
+    &lt;h2&gt;W14&lt;/h2&gt;
     &lt;p&gt;
-        reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+       依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
 </t>
 <t tx="leo.20220314203825.22">&lt;section&gt;
-    &lt;h2&gt;W13&lt;/h2&gt;
+    &lt;h2&gt;W15&lt;/h2&gt;
     &lt;p&gt;
-        reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
 </t>
 <t tx="leo.20220314203825.25">&lt;section&gt;
-    &lt;h2&gt;W14&lt;/h2&gt;
+    &lt;h2&gt;W16&lt;/h2&gt;
     &lt;p&gt;
-        reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
@@ -215,14 +215,14 @@ vertical: body pane on the botton</t>
 <t tx="leo.20220314203825.26">&lt;section&gt;
     &lt;h2&gt;W15&lt;/h2&gt;
     &lt;p&gt;
-        reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 </t>
 <t tx="leo.20220314203825.27">&lt;section&gt;
     &lt;h2&gt;W16&lt;/h2&gt;
     &lt;p&gt;
-        reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
@@ -292,7 +292,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20220314203825.8">&lt;section&gt;
     &lt;h2&gt;W1&lt;/h2&gt;
     &lt;p&gt;
-        reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+      建立倉儲
     &lt;/p&gt;
 &lt;/section&gt;
 
@@ -300,7 +300,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20220314203825.9">&lt;section&gt;
     &lt;h2&gt;W2&lt;/h2&gt;
     &lt;p&gt;
-        Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at &lt;a href="https://slides.com" target="_blank"&gt;https://slides.com&lt;/a&gt;.
+         分組並整理班級名單，產生個人倉儲&lt;a href="https://40923245-1.github.io/cd2022/content/%E7%8F%AD%E7%B4%9A%E7%B6%B2%E9%A0%81.html" target="_blank"&gt;班級網頁&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
