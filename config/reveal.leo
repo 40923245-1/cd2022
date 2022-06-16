@@ -143,7 +143,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20220314203825.15">&lt;section&gt;
     &lt;h2&gt;W7&lt;/h2&gt;
     &lt;p&gt;
-        分組後, 各組即進入利用 NX1980 繪製 uArm 機械手臂的協同設計階段 &lt;a href="https://40923245-1.github.io/cd2022/content/w3.html" target="_blank"&gt;分配作業&lt;/a&gt;.
+        參考老師w7任務的wink並修改路徑 &lt;a href="https://40923245-1.github.io/cd2022/content/w7.htmll" target="_blank"&gt;w7&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
@@ -151,14 +151,14 @@ vertical: body pane on the botton</t>
 <t tx="leo.20220314203825.16">&lt;section&gt;
     &lt;h2&gt;W8&lt;/h2&gt;
     &lt;p&gt;
-        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
+        繪製Uarm零件並組合完轉入coppeliaSim &lt;a href="https://40923245-1.github.io/cd2022/content/w8.html" target="_blank"&gt;w8&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 </t>
 <t tx="leo.20220314203825.17">&lt;section&gt;
     &lt;h2&gt;W10&lt;/h2&gt;
     &lt;p&gt;
-        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
+        依照老師所給wink影片進行備註 &lt;a href="https://40923245-1.github.io/cd2022/content/w10_block_ui.html" target="_blank"&gt;w10_block_ui&lt;/a&gt;、&lt;a href="https://40923245-1.github.io/cd2022/content/w10_nx_integ.html" target="_blank"&gt;w10_nx_integ&lt;/a&gt;、&lt;a href="https://40923245-1.github.io/cd2022/content/w10_ssh.html" target="_blank"&gt;w10_ssh&lt;/a&gt;
     &lt;/p&gt;
 &lt;/section&gt;
 </t>
