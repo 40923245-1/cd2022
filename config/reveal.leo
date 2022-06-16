@@ -165,7 +165,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20220314203825.18">&lt;section&gt;
     &lt;h2&gt;W11&lt;/h2&gt;
     &lt;p&gt;
-      依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
+      分組製作並進行同時編輯網頁，發生衝突後解決並建立wink影片 &lt;a href="https://40923245-1.github.io/cd2022/content/w11.html" target="_blank"&gt;w11&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;</t>
 <t tx="leo.20220314203825.19">&lt;section&gt;
