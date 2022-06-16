@@ -32,8 +32,6 @@
 <v t="leo.20220314203825.21"><vh>slide 12</vh></v>
 <v t="leo.20220314203825.22"><vh>slide 13</vh></v>
 <v t="leo.20220314203825.25"><vh>slide 14</vh></v>
-<v t="leo.20220314203825.26"><vh>slide 15</vh></v>
-<v t="leo.20220314203825.27"><vh>slide 16</vh></v>
 </v>
 </v>
 </v>
@@ -171,7 +169,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20220314203825.19">&lt;section&gt;
     &lt;h2&gt;W12&lt;/h2&gt;
     &lt;p&gt;
-        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
+        將w8零件繪製完成後利用程式數據化零件，可求出題目所需 &lt;a href="https://40923245-1.github.io/cd2022/content/w12.html" target="_blank"&gt;w12&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
@@ -183,7 +181,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20220314203825.20">&lt;section&gt;
     &lt;h2&gt;W13&lt;/h2&gt;
     &lt;p&gt;
-        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
+        理解如何利用Brython確認學員有無完成該週進度 &lt;a href="https://40923245-1.github.io/cd2022/content/w13.html" target="_blank"&gt;w13&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
@@ -191,7 +189,10 @@ vertical: body pane on the botton</t>
 <t tx="leo.20220314203825.21">&lt;section&gt;
     &lt;h2&gt;W14&lt;/h2&gt;
     &lt;p&gt;
-       依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
+       1.如何利用 Leo Editor 與 Python 編寫 CoppeliaSim 場景中的控制程式 
+       2.如何利用 Lua 編寫 MTB robot 機械手臂的控制程式
+       3.如何利用 Lua 引入 suctionpad component 執行物件吸取與釋放
+       &lt;a href="https://40923245-1.github.io/cd2022/content/w14.html" target="_blank"&gt;w14&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
@@ -199,7 +200,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20220314203825.22">&lt;section&gt;
     &lt;h2&gt;W15&lt;/h2&gt;
     &lt;p&gt;
-        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
+        將uarm轉入coppeliaSim並利用程式吸取及放置方塊 &lt;a href="https://40923245-1.github.io/cd2022/content/w15.html" target="_blank"&gt;w15&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
@@ -207,22 +208,9 @@ vertical: body pane on the botton</t>
 <t tx="leo.20220314203825.25">&lt;section&gt;
     &lt;h2&gt;W16&lt;/h2&gt;
     &lt;p&gt;
-        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
-    &lt;/p&gt;
-&lt;/section&gt;
-
-</t>
-<t tx="leo.20220314203825.26">&lt;section&gt;
-    &lt;h2&gt;W15&lt;/h2&gt;
-    &lt;p&gt;
-        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
-    &lt;/p&gt;
-&lt;/section&gt;
-</t>
-<t tx="leo.20220314203825.27">&lt;section&gt;
-    &lt;h2&gt;W16&lt;/h2&gt;
-    &lt;p&gt;
-        依照指示創建個人網誌 &lt;a href="https://40923245-1.github.io/cd2022/blog/index.html" target="_blank"&gt;blog&lt;/a&gt;.
+        1.列出運算式說明, 啟動模擬後 joint1, joint2 與 joint3 分別以逆時針旋轉 5 度後, 求green_suctionpad_frame 的絕對座標值.
+        2.列出運算式說明左側 uarm 機械手臂的 joint1, joint2 與 joint3 該如何旋轉才能讓 end effector 的吸盤末端中心點移動至紅色方塊頂端中心? 
+        &lt;a href="https://40923245-1.github.io/cd2022/content/w16.html" target="_blank"&gt;w16&lt;/a&gt;.
     &lt;/p&gt;
 &lt;/section&gt;
 
