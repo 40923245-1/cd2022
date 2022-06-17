@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>cd2022 - Misc</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2022-04-28T17:12:39+08:00</updated><entry><title>2022 Spring CD 課程</title><link href="./w10.html" rel="alternate"></link><published>2022-04-28T17:00:00+08:00</published><updated>2022-04-28T17:12:39+08:00</updated><author><name>Lu</name></author><id>tag:None,2022-04-28:./w10.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>cd2022 - Misc</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2022-06-17T21:17:39+08:00</updated><entry><title>2022 Spring CD 課程W10</title><link href="./w10.html" rel="alternate"></link><published>2022-04-28T17:00:00+08:00</published><updated>2022-06-17T21:17:39+08:00</updated><author><name>Lu</name></author><id>tag:None,2022-04-28:./w10.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 
 
-&lt;h2&gt;W10&lt;/h2&gt;
-&lt;p&gt;連結網站&lt;a href="https://40923245-1.github.io/cd2022/content/w10_block_ui.html"&gt;w10_block_ui&lt;/a&gt;&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>2022 Spring CD 課程</title><link href="./midterm.html" rel="alternate"></link><published>2022-04-21T13:53:00+08:00</published><updated>2022-04-28T16:56:53+08:00</updated><author><name>Lu</name></author><id>tag:None,2022-04-21:./midterm.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
+&lt;h2&gt;W10&lt;/h2&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>2022 Spring CD 課程W8</title><link href="./midterm.html" rel="alternate"></link><published>2022-04-21T13:53:00+08:00</published><updated>2022-06-17T21:17:39+08:00</updated><author><name>Lu</name></author><id>tag:None,2022-04-21:./midterm.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 
 
-&lt;p&gt;W8
-分配到繪圖軟體:solvespace
-心得:這是第一次用solvespace，使用上十分生疏，也遇到了問題。例如:我要再已擠出的面再擠出另一個實體solvespace並不向其他繪圖軟體可以直接擠製，需要選擇軸線與兩點才能。&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>2022 Spring CD 課程</title><link href="./w7_summary.html" rel="alternate"></link><published>2022-04-07T12:50:00+08:00</published><updated>2022-04-28T16:56:53+08:00</updated><author><name>Lu</name></author><id>tag:None,2022-04-07:./w7_summary.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
+&lt;h2&gt;W8&lt;/h2&gt;
+&lt;p&gt;分配到繪圖軟體:solvespace
+心得:這是第一次用solvespace，使用上十分生疏，也遇到了問題。例如:我要再已擠出的面再擠出另一個實體solvespace並不向其他繪圖軟體可以直接擠製，需要選擇軸線與兩點才能。&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>2022 Spring CD 課程W7</title><link href="./w7_summary.html" rel="alternate"></link><published>2022-04-07T12:50:00+08:00</published><updated>2022-06-17T21:17:39+08:00</updated><author><name>Lu</name></author><id>tag:None,2022-04-07:./w7_summary.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 
 
@@ -23,7 +22,7 @@
 40923245 Onshape
 40923247 NX1980
 40923249 NX1980
-40923252 Solvespace&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>2022 Spring CD 課程</title><link href="./w6_40923245.html" rel="alternate"></link><published>2022-03-31T15:00:00+08:00</published><updated>2022-04-28T16:56:53+08:00</updated><author><name>Lu</name></author><id>tag:None,2022-03-31:./w6_40923245.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
+40923252 Solvespace&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>2022 Spring CD 課程W6</title><link href="./w6_40923245.html" rel="alternate"></link><published>2022-03-31T15:00:00+08:00</published><updated>2022-06-17T21:17:39+08:00</updated><author><name>Lu</name></author><id>tag:None,2022-03-31:./w6_40923245.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 
 
