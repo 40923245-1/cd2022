@@ -526,7 +526,368 @@ print("done")</pre>
 <li>(說明如何利用 Lua 編寫 MTB robot 機械手臂的控制程式)</li>
 <li>說明如何利用 Lua 引入 suctionpad component 執行物件吸取與釋放)</li>
 </ol>
-<p><img alt="" height="567" src="/images/40923245.png" width="1008"/></p><h2>w15</h2>
+<p><img alt="" height="567" src="/images/40923245.png" width="1008"/></p>
+<p>以鍵盤控制 MTB_nx robot (for CoppeliaSim 4.3.0)</p>
+<p>程式碼:</p>
+<div>
+<div class="syntaxhighlighter lua" id="highlighter_510300">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+<div class="line number22 index21 alt1">22</div>
+<div class="line number23 index22 alt2">23</div>
+<div class="line number24 index23 alt1">24</div>
+<div class="line number25 index24 alt2">25</div>
+<div class="line number26 index25 alt1">26</div>
+<div class="line number27 index26 alt2">27</div>
+<div class="line number28 index27 alt1">28</div>
+<div class="line number29 index28 alt2">29</div>
+<div class="line number30 index29 alt1">30</div>
+<div class="line number31 index30 alt2">31</div>
+<div class="line number32 index31 alt1">32</div>
+<div class="line number33 index32 alt2">33</div>
+<div class="line number34 index33 alt1">34</div>
+<div class="line number35 index34 alt2">35</div>
+<div class="line number36 index35 alt1">36</div>
+<div class="line number37 index36 alt2">37</div>
+<div class="line number38 index37 alt1">38</div>
+<div class="line number39 index38 alt2">39</div>
+<div class="line number40 index39 alt1">40</div>
+<div class="line number41 index40 alt2">41</div>
+<div class="line number42 index41 alt1">42</div>
+<div class="line number43 index42 alt2">43</div>
+<div class="line number44 index43 alt1">44</div>
+<div class="line number45 index44 alt2">45</div>
+<div class="line number46 index45 alt1">46</div>
+<div class="line number47 index46 alt2">47</div>
+<div class="line number48 index47 alt1">48</div>
+<div class="line number49 index48 alt2">49</div>
+<div class="line number50 index49 alt1">50</div>
+<div class="line number51 index50 alt2">51</div>
+<div class="line number52 index51 alt1">52</div>
+<div class="line number53 index52 alt2">53</div>
+<div class="line number54 index53 alt1">54</div>
+<div class="line number55 index54 alt2">55</div>
+<div class="line number56 index55 alt1">56</div>
+<div class="line number57 index56 alt2">57</div>
+<div class="line number58 index57 alt1">58</div>
+<div class="line number59 index58 alt2">59</div>
+<div class="line number60 index59 alt1">60</div>
+<div class="line number61 index60 alt2">61</div>
+<div class="line number62 index61 alt1">62</div>
+<div class="line number63 index62 alt2">63</div>
+<div class="line number64 index63 alt1">64</div>
+<div class="line number65 index64 alt2">65</div>
+<div class="line number66 index65 alt1">66</div>
+<div class="line number67 index66 alt2">67</div>
+<div class="line number68 index67 alt1">68</div>
+<div class="line number69 index68 alt2">69</div>
+<div class="line number70 index69 alt1">70</div>
+<div class="line number71 index70 alt2">71</div>
+<div class="line number72 index71 alt1">72</div>
+<div class="line number73 index72 alt2">73</div>
+<div class="line number74 index73 alt1">74</div>
+<div class="line number75 index74 alt2">75</div>
+<div class="line number76 index75 alt1">76</div>
+<div class="line number77 index76 alt2">77</div>
+<div class="line number78 index77 alt1">78</div>
+<div class="line number79 index78 alt2">79</div>
+<div class="line number80 index79 alt1">80</div>
+<div class="line number81 index80 alt2">81</div>
+<div class="line number82 index81 alt1">82</div>
+<div class="line number83 index82 alt2">83</div>
+<div class="line number84 index83 alt1">84</div>
+<div class="line number85 index84 alt2">85</div>
+<div class="line number86 index85 alt1">86</div>
+<div class="line number87 index86 alt2">87</div>
+<div class="line number88 index87 alt1">88</div>
+<div class="line number89 index88 alt2">89</div>
+<div class="line number90 index89 alt1">90</div>
+<div class="line number91 index90 alt2">91</div>
+<div class="line number92 index91 alt1">92</div>
+<div class="line number93 index92 alt2">93</div>
+<div class="line number94 index93 alt1">94</div>
+<div class="line number95 index94 alt2">95</div>
+<div class="line number96 index95 alt1">96</div>
+<div class="line number97 index96 alt2">97</div>
+<div class="line number98 index97 alt1">98</div>
+<div class="line number99 index98 alt2">99</div>
+<div class="line number100 index99 alt1">100</div>
+<div class="line number101 index100 alt2">101</div>
+<div class="line number102 index101 alt1">102</div>
+<div class="line number103 index102 alt2">103</div>
+<div class="line number104 index103 alt1">104</div>
+<div class="line number105 index104 alt2">105</div>
+<div class="line number106 index105 alt1">106</div>
+<div class="line number107 index106 alt2">107</div>
+<div class="line number108 index107 alt1">108</div>
+<div class="line number109 index108 alt2">109</div>
+<div class="line number110 index109 alt1">110</div>
+<div class="line number111 index110 alt2">111</div>
+<div class="line number112 index111 alt1">112</div>
+<div class="line number113 index112 alt2">113</div>
+<div class="line number114 index113 alt1">114</div>
+<div class="line number115 index114 alt2">115</div>
+<div class="line number116 index115 alt1">116</div>
+<div class="line number117 index116 alt2">117</div>
+<div class="line number118 index117 alt1">118</div>
+<div class="line number119 index118 alt2">119</div>
+<div class="line number120 index119 alt1">120</div>
+<div class="line number121 index120 alt2">121</div>
+<div class="line number122 index121 alt1">122</div>
+<div class="line number123 index122 alt2">123</div>
+<div class="line number124 index123 alt1">124</div>
+<div class="line number125 index124 alt2">125</div>
+<div class="line number126 index125 alt1">126</div>
+<div class="line number127 index126 alt2">127</div>
+<div class="line number128 index127 alt1">128</div>
+<div class="line number129 index128 alt2">129</div>
+<div class="line number130 index129 alt1">130</div>
+<div class="line number131 index130 alt2">131</div>
+<div class="line number132 index131 alt1">132</div>
+<div class="line number133 index132 alt2">133</div>
+<div class="line number134 index133 alt1">134</div>
+<div class="line number135 index134 alt2">135</div>
+<div class="line number136 index135 alt1">136</div>
+<div class="line number137 index136 alt2">137</div>
+<div class="line number138 index137 alt1">138</div>
+<div class="line number139 index138 alt2">139</div>
+<div class="line number140 index139 alt1">140</div>
+<div class="line number141 index140 alt2">141</div>
+<div class="line number142 index141 alt1">142</div>
+<div class="line number143 index142 alt2">143</div>
+<div class="line number144 index143 alt1">144</div>
+<div class="line number145 index144 alt2">145</div>
+<div class="line number146 index145 alt1">146</div>
+<div class="line number147 index146 alt2">147</div>
+<div class="line number148 index147 alt1">148</div>
+<div class="line number149 index148 alt2">149</div>
+<div class="line number150 index149 alt1">150</div>
+<div class="line number151 index150 alt2">151</div>
+<div class="line number152 index151 alt1">152</div>
+<div class="line number153 index152 alt2">153</div>
+<div class="line number154 index153 alt1">154</div>
+<div class="line number155 index154 alt2">155</div>
+<div class="line number156 index155 alt1">156</div>
+<div class="line number157 index156 alt2">157</div>
+<div class="line number158 index157 alt1">158</div>
+<div class="line number159 index158 alt2">159</div>
+<div class="line number160 index159 alt1">160</div>
+<div class="line number161 index160 alt2">161</div>
+<div class="line number162 index161 alt1">162</div>
+<div class="line number163 index162 alt2">163</div>
+<div class="line number164 index163 alt1">164</div>
+<div class="line number165 index164 alt2">165</div>
+<div class="line number166 index165 alt1">166</div>
+<div class="line number167 index166 alt2">167</div>
+<div class="line number168 index167 alt1">168</div>
+<div class="line number169 index168 alt2">169</div>
+<div class="line number170 index169 alt1">170</div>
+<div class="line number171 index170 alt2">171</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="lua keyword">function</code> <code class="lua plain">sysCall_init() </code></div>
+<div class="line number2 index1 alt1"><code class="lua spaces">    </code><code class="lua plain">axis1=sim.getObject(</code><code class="lua string">'/joint1'</code><code class="lua plain">)</code></div>
+<div class="line number3 index2 alt2"><code class="lua spaces">    </code><code class="lua plain">axis2=sim.getObject(</code><code class="lua string">'/joint2'</code><code class="lua plain">)</code></div>
+<div class="line number4 index3 alt1"><code class="lua spaces">    </code><code class="lua plain">axis3=sim.getObject(</code><code class="lua string">'/joint3'</code><code class="lua plain">)</code></div>
+<div class="line number5 index4 alt2"><code class="lua spaces">    </code><code class="lua plain">suctionPad=sim.getObject(</code><code class="lua string">'/suctionPad'</code><code class="lua plain">)</code></div>
+<div class="line number6 index5 alt1"><code class="lua spaces">    </code><code class="lua plain">MTB_Robot=sim.getObject(</code><code class="lua string">"/base"</code><code class="lua plain">)</code></div>
+<div class="line number7 index6 alt2"><code class="lua spaces">    </code><code class="lua plain">BaseFrame=sim.getObject(</code><code class="lua string">"/BaseFrame"</code><code class="lua plain">)</code></div>
+<div class="line number8 index7 alt1"><code class="lua spaces">    </code><code class="lua plain">block =sim.getObject(</code><code class="lua string">"/block"</code><code class="lua plain">)</code></div>
+<div class="line number9 index8 alt2"><code class="lua spaces">    </code><code class="lua plain">rotation1 = 0</code></div>
+<div class="line number10 index9 alt1"><code class="lua spaces">    </code><code class="lua plain">distance3 = 0</code></div>
+<div class="line number11 index10 alt2"><code class="lua spaces">    </code><code class="lua plain">deg = </code><code class="lua functions">math.pi</code><code class="lua plain">/180.</code></div>
+<div class="line number12 index11 alt1"><code class="lua keyword">end</code></div>
+<div class="line number13 index12 alt2"> </div>
+<div class="line number14 index13 alt1"> </div>
+<div class="line number15 index14 alt2"><code class="lua keyword">function</code> <code class="lua plain">sysCall_actuation() </code></div>
+<div class="line number16 index15 alt1"><code class="lua comments">--[[</code></div>
+<div class="line number17 index16 alt2"><code class="lua spaces">    </code><code class="lua comments">rotation1 = rotation1 + 0.5*deg</code></div>
+<div class="line number18 index17 alt1"><code class="lua spaces">    </code><code class="lua comments">print(rotation1)</code></div>
+<div class="line number19 index18 alt2"><code class="lua spaces">    </code><code class="lua comments">sim.setJointPosition(axis1, -rotation1)</code></div>
+<div class="line number20 index19 alt1"><code class="lua spaces">    </code><code class="lua comments">sim.setJointPosition(axis2, -rotation1)</code></div>
+<div class="line number21 index20 alt2"><code class="lua comments">]]</code></div>
+<div class="line number22 index21 alt1"> </div>
+<div class="line number23 index22 alt2"><code class="lua spaces">    </code><code class="lua comments">message, auxiliaryData=sim.getSimulatorMessage()</code></div>
+<div class="line number24 index23 alt1"><code class="lua spaces">        </code><code class="lua comments">while message ~= -1 do</code></div>
+<div class="line number25 index24 alt2"><code class="lua spaces">            </code><code class="lua comments">key=auxiliaryData[1]</code></div>
+<div class="line number26 index25 alt1"><code class="lua spaces">            </code><code class="lua comments">sim.addStatusbarMessage('user press key:'..key)</code></div>
+<div class="line number27 index26 alt2"><code class="lua spaces">            </code><code class="lua comments">if (message==sim.message_keypress) then</code></div>
+<div class="line number28 index27 alt1"><code class="lua spaces">               </code><code class="lua comments">--if (auxiliaryData[1]==112) then --p activate the suction pad</code></div>
+<div class="line number29 index28 alt2"><code class="lua spaces">                </code><code class="lua comments">if (auxiliaryData[1]==string.byte('p')) then</code></div>
+<div class="line number30 index29 alt1"><code class="lua spaces">                    </code><code class="lua comments">-- if key p pressed activate the suction mode</code></div>
+<div class="line number31 index30 alt2"><code class="lua comments">sim.setScriptSimulationParameter(sim.getScriptAssociatedWithObject(suctionPad),'active','true')</code></div>
+<div class="line number32 index31 alt1"><code class="lua spaces">                </code><code class="lua comments">end -- if p</code></div>
+<div class="line number33 index32 alt2"><code class="lua spaces">                </code><code class="lua comments">if (auxiliaryData[1]==113) then --q deactivate the suction pad</code></div>
+<div class="line number34 index33 alt1"><code class="lua spaces">                    </code><code class="lua comments">-- if key q pressed deactivate the suction mode</code></div>
+<div class="line number35 index34 alt2"><code class="lua comments">sim.setScriptSimulationParameter(sim.getScriptAssociatedWithObject(suctionPad),'active','false')</code></div>
+<div class="line number36 index35 alt1"><code class="lua spaces">                </code><code class="lua comments">end -- if q</code></div>
+<div class="line number37 index36 alt2"><code class="lua spaces">                </code><code class="lua comments">if (auxiliaryData[1]==114) then --r right turn in degree</code></div>
+<div class="line number38 index37 alt1"><code class="lua spaces">                    </code><code class="lua comments">-- if key r pressed axis1 angle adds 5 degrees</code></div>
+<div class="line number39 index38 alt2"><code class="lua spaces">                     </code><code class="lua comments">rotation1 = rotation1 + 5*deg</code></div>
+<div class="line number40 index39 alt1"><code class="lua spaces">                     </code><code class="lua comments">sim.setJointPosition(axis1, rotation1)</code></div>
+<div class="line number41 index40 alt2"><code class="lua spaces">                </code><code class="lua comments">end -- if r</code></div>
+<div class="line number42 index41 alt1"><code class="lua spaces">                </code><code class="lua comments">if (auxiliaryData[1]==108) then --l left turn in degree</code></div>
+<div class="line number43 index42 alt2"><code class="lua spaces">                    </code><code class="lua comments">-- if key l pressed axis1 angle substract 5 degrees</code></div>
+<div class="line number44 index43 alt1"><code class="lua spaces">                     </code><code class="lua comments">rotation1 = rotation1 - 5*deg</code></div>
+<div class="line number45 index44 alt2"><code class="lua spaces">                     </code><code class="lua comments">sim.setJointPosition(axis1, rotation1)</code></div>
+<div class="line number46 index45 alt1"><code class="lua spaces">                </code><code class="lua comments">end -- if l</code></div>
+<div class="line number47 index46 alt2"><code class="lua spaces">                </code><code class="lua comments">if (auxiliaryData[1]==100) then --d suction pad down</code></div>
+<div class="line number48 index47 alt1"><code class="lua spaces">                    </code><code class="lua comments">-- if key d pressed axis3 will down 0.01 m</code></div>
+<div class="line number49 index48 alt2"><code class="lua spaces">                     </code><code class="lua comments">distance3 = distance3 + 0.01</code></div>
+<div class="line number50 index49 alt1"><code class="lua spaces">                     </code><code class="lua comments">sim.setJointPosition(axis3, distance3)</code></div>
+<div class="line number51 index50 alt2"><code class="lua spaces">                </code><code class="lua comments">end -- if d</code></div>
+<div class="line number52 index51 alt1"><code class="lua spaces">                </code><code class="lua comments">if (auxiliaryData[1]==117) then --u suction pad up</code></div>
+<div class="line number53 index52 alt2"><code class="lua spaces">                    </code><code class="lua comments">-- if key u pressed axis3 will up 0.01 m</code></div>
+<div class="line number54 index53 alt1"><code class="lua spaces">                     </code><code class="lua comments">distance3 = distance3 - 0.01</code></div>
+<div class="line number55 index54 alt2"><code class="lua spaces">                     </code><code class="lua comments">sim.setJointPosition(axis3, distance3)</code></div>
+<div class="line number56 index55 alt1"><code class="lua spaces">                </code><code class="lua comments">end -- if u</code></div>
+<div class="line number57 index56 alt2"><code class="lua spaces">                </code><code class="lua comments">if (auxiliaryData[1]==99) then --c coordinate of block</code></div>
+<div class="line number58 index57 alt1"><code class="lua spaces">                    </code><code class="lua comments">--blockPosition = sim.getObjectPosition(block, BaseFrame)</code></div>
+<div class="line number59 index58 alt2"><code class="lua spaces">                    </code><code class="lua comments">blockPosition = sim.getObjectPosition(suctionPad, BaseFrame)</code></div>
+<div class="line number60 index59 alt1"><code class="lua spaces">                    </code><code class="lua comments">sim.addStatusbarMessage("coordinate:"..table_to_string(blockPosition))</code></div>
+<div class="line number61 index60 alt2"><code class="lua spaces">                </code><code class="lua comments">end --if c</code></div>
+<div class="line number62 index61 alt1"><code class="lua spaces">           </code><code class="lua comments">end  -- if</code></div>
+<div class="line number63 index62 alt2"><code class="lua spaces">    </code><code class="lua comments">message, auxiliaryData=sim.getSimulatorMessage()</code></div>
+<div class="line number64 index63 alt1"><code class="lua spaces">        </code><code class="lua comments">end -- while</code></div>
+<div class="line number65 index64 alt2"><code class="lua comments">end -- function</code></div>
+<div class="line number66 index65 alt1"><code class="lua comments">function sysCall_sensing() </code></div>
+<div class="line number67 index66 alt2"><code class="lua comments">--[[</code></div>
+<div class="line number68 index67 alt1"><code class="lua spaces">    </code><code class="lua comments">-- Read Proximity sensor (0= nothing detected, 1 = object detected)</code></div>
+<div class="line number69 index68 alt2"><code class="lua spaces">    </code><code class="lua comments">local res = sim.readProximitySensor(proximity)</code></div>
+<div class="line number70 index69 alt1"> </div>
+<div class="line number71 index70 alt2"><code class="lua spaces">    </code><code class="lua comments">-- Check if possible to insert an new box</code></div>
+<div class="line number72 index71 alt1"><code class="lua spaces">    </code><code class="lua comments">if (sim.getSimulationTime()-T_last_inserted &gt; T_insert) and not hasStopped then</code></div>
+<div class="line number73 index72 alt2"><code class="lua spaces">        </code><code class="lua comments">insertBox()</code></div>
+<div class="line number74 index73 alt1"><code class="lua spaces">    </code><code class="lua comments">end</code></div>
+<div class="line number75 index74 alt2"> </div>
+<div class="line number76 index75 alt1"><code class="lua spaces">    </code><code class="lua comments">-- If proximity sensor detects an object, stop the belt, stop inserting objects</code></div>
+<div class="line number77 index76 alt2"><code class="lua spaces">    </code><code class="lua comments">if res == 1 and not hasStopped then</code></div>
+<div class="line number78 index77 alt1"><code class="lua spaces">        </code><code class="lua comments">if boolList[1] then</code></div>
+<div class="line number79 index78 alt2"><code class="lua spaces">            </code><code class="lua comments">sim.setScriptSimulationParameter(sim.handle_self,"conveyorBeltVelocity",0)</code></div>
+<div class="line number80 index79 alt1"><code class="lua spaces">            </code><code class="lua comments">deltaTime = sim.getSimulationTime()-T_last_inserted</code></div>
+<div class="line number81 index80 alt2"><code class="lua spaces">            </code><code class="lua comments">hasStopped = true</code></div>
+<div class="line number82 index81 alt1"><code class="lua spaces">        </code><code class="lua comments">else</code></div>
+<div class="line number83 index82 alt2"><code class="lua spaces">            </code><code class="lua comments">local box = table.remove(boxList,1)</code></div>
+<div class="line number84 index83 alt1"><code class="lua spaces">            </code><code class="lua comments">local boxDummy = table.remove(boxDummyList,1)</code></div>
+<div class="line number85 index84 alt2"><code class="lua spaces">            </code><code class="lua comments">table.remove(boolList,1)</code></div>
+<div class="line number86 index85 alt1"> </div>
+<div class="line number87 index86 alt2"><code class="lua spaces">            </code><code class="lua comments">sim.removeObject(box)</code></div>
+<div class="line number88 index87 alt1"><code class="lua spaces">            </code><code class="lua comments">sim.removeObject(boxDummy)</code></div>
+<div class="line number89 index88 alt2"><code class="lua spaces">        </code><code class="lua comments">end</code></div>
+<div class="line number90 index89 alt1"><code class="lua spaces">    </code><code class="lua comments">end</code></div>
+<div class="line number91 index90 alt2"> </div>
+<div class="line number92 index91 alt1"><code class="lua spaces">    </code><code class="lua comments">-- If proximity sensor detects nothing and belt has stopped, start belt, continue inserting</code></div>
+<div class="line number93 index92 alt2"><code class="lua spaces">    </code><code class="lua comments">if res == 0 and hasStopped then</code></div>
+<div class="line number94 index93 alt1"><code class="lua spaces">        </code><code class="lua comments">sim.setScriptSimulationParameter(sim.handle_self,"conveyorBeltVelocity",beltSpeed)</code></div>
+<div class="line number95 index94 alt2"><code class="lua spaces">        </code><code class="lua comments">hasStopped = false</code></div>
+<div class="line number96 index95 alt1"><code class="lua spaces">        </code><code class="lua comments">T_last_inserted = sim.getSimulationTime()-deltaTime</code></div>
+<div class="line number97 index96 alt2"><code class="lua spaces">    </code><code class="lua comments">end</code></div>
+<div class="line number98 index97 alt1"><code class="lua spaces">    </code> </div>
+<div class="line number99 index98 alt2"><code class="lua comments">]]</code><code class="lua comments">--</code></div>
+<div class="line number100 index99 alt1"><code class="lua keyword">end</code></div>
+<div class="line number101 index100 alt2"><code class="lua keyword">function</code> <code class="lua plain">sysCall_cleanup() </code></div>
+<div class="line number102 index101 alt1"><code class="lua keyword">end</code></div>
+<div class="line number103 index102 alt2"><code class="lua comments">-- Convert a lua table into a lua syntactically correct string</code></div>
+<div class="line number104 index103 alt1"><code class="lua keyword">function</code> <code class="lua plain">table_to_string(tbl)</code></div>
+<div class="line number105 index104 alt2"><code class="lua spaces">    </code><code class="lua keyword">local</code> <code class="lua plain">result = </code><code class="lua string">"{"</code></div>
+<div class="line number106 index105 alt1"><code class="lua spaces">    </code><code class="lua keyword">for</code> <code class="lua plain">k, v </code><code class="lua keyword">in</code> <code class="lua functions">pairs</code><code class="lua plain">(tbl) </code><code class="lua keyword">do</code></div>
+<div class="line number107 index106 alt2"><code class="lua spaces">        </code><code class="lua comments">-- Check the key type (ignore any numerical keys - assume its an array)</code></div>
+<div class="line number108 index107 alt1"><code class="lua spaces">        </code><code class="lua keyword">if</code> <code class="lua functions">type</code><code class="lua plain">(k) == </code><code class="lua string">"string"</code> <code class="lua keyword">then</code></div>
+<div class="line number109 index108 alt2"><code class="lua spaces">            </code><code class="lua plain">result = result..</code><code class="lua string">"[\""</code><code class="lua plain">..k..</code><code class="lua string">"\"]"</code><code class="lua plain">..</code><code class="lua string">"="</code></div>
+<div class="line number110 index109 alt1"><code class="lua spaces">        </code><code class="lua keyword">end</code></div>
+<div class="line number111 index110 alt2"> </div>
+<div class="line number112 index111 alt1"><code class="lua spaces">        </code><code class="lua comments">-- Check the value type</code></div>
+<div class="line number113 index112 alt2"><code class="lua spaces">        </code><code class="lua keyword">if</code> <code class="lua functions">type</code><code class="lua plain">(v) == </code><code class="lua string">"table"</code> <code class="lua keyword">then</code></div>
+<div class="line number114 index113 alt1"><code class="lua spaces">            </code><code class="lua plain">result = result..table_to_string(v)</code></div>
+<div class="line number115 index114 alt2"><code class="lua spaces">        </code><code class="lua keyword">elseif</code> <code class="lua functions">type</code><code class="lua plain">(v) == </code><code class="lua string">"boolean"</code> <code class="lua keyword">then</code></div>
+<div class="line number116 index115 alt1"><code class="lua spaces">            </code><code class="lua plain">result = result..</code><code class="lua functions">tostring</code><code class="lua plain">(v)</code></div>
+<div class="line number117 index116 alt2"><code class="lua spaces">        </code><code class="lua keyword">else</code></div>
+<div class="line number118 index117 alt1"><code class="lua spaces">            </code><code class="lua plain">v = round(v, 4)</code></div>
+<div class="line number119 index118 alt2"><code class="lua spaces">            </code><code class="lua plain">result = result..</code><code class="lua string">"\""</code><code class="lua plain">..v..</code><code class="lua string">"\""</code></div>
+<div class="line number120 index119 alt1"><code class="lua spaces">        </code><code class="lua keyword">end</code></div>
+<div class="line number121 index120 alt2"><code class="lua spaces">        </code><code class="lua plain">result = result..</code><code class="lua string">","</code></div>
+<div class="line number122 index121 alt1"><code class="lua spaces">    </code><code class="lua keyword">end</code></div>
+<div class="line number123 index122 alt2"><code class="lua spaces">    </code><code class="lua comments">-- Remove leading commas from the result</code></div>
+<div class="line number124 index123 alt1"><code class="lua spaces">    </code><code class="lua keyword">if</code> <code class="lua plain">result ~= </code><code class="lua string">""</code> <code class="lua keyword">then</code></div>
+<div class="line number125 index124 alt2"><code class="lua spaces">        </code><code class="lua plain">result = result:sub(1, result:len()-1)</code></div>
+<div class="line number126 index125 alt1"><code class="lua spaces">    </code><code class="lua keyword">end</code></div>
+<div class="line number127 index126 alt2"><code class="lua spaces">    </code><code class="lua keyword">return</code> <code class="lua plain">result..</code><code class="lua string">"}"</code></div>
+<div class="line number128 index127 alt1"><code class="lua keyword">end</code></div>
+<div class="line number129 index128 alt2"><code class="lua keyword">function</code> <code class="lua plain">round(x, n)</code></div>
+<div class="line number130 index129 alt1"><code class="lua spaces">    </code><code class="lua plain">n = </code><code class="lua functions">math.pow</code><code class="lua plain">(10, n </code><code class="lua keyword">or</code> <code class="lua plain">0)</code></div>
+<div class="line number131 index130 alt2"><code class="lua spaces">    </code><code class="lua plain">x = x * n</code></div>
+<div class="line number132 index131 alt1"><code class="lua spaces">    </code><code class="lua keyword">if</code> <code class="lua plain">x &gt;= 0 </code><code class="lua keyword">then</code> <code class="lua plain">x = </code><code class="lua functions">math.floor</code><code class="lua plain">(x + 0.5) </code><code class="lua keyword">else</code> <code class="lua plain">x = </code><code class="lua functions">math.ceil</code><code class="lua plain">(x - 0.5) </code><code class="lua keyword">end</code></div>
+<div class="line number133 index132 alt2"><code class="lua spaces">    </code><code class="lua keyword">return</code> <code class="lua plain">x / n</code></div>
+<div class="line number134 index133 alt1"><code class="lua keyword">end</code></div>
+<div class="line number135 index134 alt2"> </div>
+<div class="line number136 index135 alt1"> </div>
+<div class="line number137 index136 alt2"><code class="lua keyword">function</code> <code class="lua plain">insertBox()</code></div>
+<div class="line number138 index137 alt1"><code class="lua spaces">    </code><code class="lua comments">-- Generate random numbers</code></div>
+<div class="line number139 index138 alt2"><code class="lua spaces">    </code><code class="lua keyword">local</code> <code class="lua plain">rand1 = </code><code class="lua functions">math.random</code><code class="lua plain">()</code></div>
+<div class="line number140 index139 alt1"><code class="lua spaces">    </code><code class="lua keyword">local</code> <code class="lua plain">rand2 = </code><code class="lua functions">math.random</code><code class="lua plain">()</code></div>
+<div class="line number141 index140 alt2"><code class="lua spaces">    </code><code class="lua keyword">local</code> <code class="lua plain">rand3 = </code><code class="lua functions">math.random</code><code class="lua plain">()</code></div>
+<div class="line number142 index141 alt1"><code class="lua spaces">    </code><code class="lua comments">-- Generate random disturbances on position and orientation</code></div>
+<div class="line number143 index142 alt2"><code class="lua spaces">    </code><code class="lua keyword">local</code> <code class="lua plain">dx = (2*rand1-1)*0.1</code></div>
+<div class="line number144 index143 alt1"><code class="lua spaces">    </code><code class="lua keyword">local</code> <code class="lua plain">dy = (2*rand2-1)*0.1</code></div>
+<div class="line number145 index144 alt2"><code class="lua spaces">    </code><code class="lua keyword">local</code> <code class="lua plain">dphi = (2*rand3-1)*0.5</code></div>
+<div class="line number146 index145 alt1"><code class="lua spaces">    </code><code class="lua keyword">local</code> <code class="lua plain">disturbedCoordinates = {0,0,0}</code></div>
+<div class="line number147 index146 alt2"><code class="lua spaces">    </code><code class="lua plain">disturbedCoordinates[1] = insertCoordinate[1]+dx</code></div>
+<div class="line number148 index147 alt1"><code class="lua spaces">    </code><code class="lua plain">disturbedCoordinates[2] = insertCoordinate[2]+dy</code></div>
+<div class="line number149 index148 alt2"><code class="lua spaces">    </code><code class="lua plain">disturbedCoordinates[3] = insertCoordinate[3]</code></div>
+<div class="line number150 index149 alt1"><code class="lua spaces">    </code><code class="lua comments">-- Copy and paste box and boxDummy</code></div>
+<div class="line number151 index150 alt2"><code class="lua spaces">    </code><code class="lua keyword">local</code> <code class="lua plain">insertedObjects = sim.copyPasteObjects({box,boxDummy},0)</code></div>
+<div class="line number152 index151 alt1"><code class="lua spaces">    </code><code class="lua comments">-- Update last inserted box time</code></div>
+<div class="line number153 index152 alt2"><code class="lua spaces">    </code><code class="lua plain">T_last_inserted = sim.getSimulationTime()</code></div>
+<div class="line number154 index153 alt1"><code class="lua spaces">    </code><code class="lua comments">-- Move and rotate</code></div>
+<div class="line number155 index154 alt2"><code class="lua spaces">    </code><code class="lua plain">sim.setObjectPosition(insertedObjects[1],-1,disturbedCoordinates)</code></div>
+<div class="line number156 index155 alt1"><code class="lua spaces">    </code><code class="lua plain">sim.setObjectOrientation(insertedObjects[1],-1,{0,0,dphi})</code></div>
+<div class="line number157 index156 alt2"><code class="lua spaces">    </code><code class="lua comments">-- Store handles to boxes and dummies</code></div>
+<div class="line number158 index157 alt1"><code class="lua spaces">    </code><code class="lua functions">table.insert</code><code class="lua plain">(boxList,insertedObjects[1])</code></div>
+<div class="line number159 index158 alt2"><code class="lua spaces">    </code><code class="lua functions">table.insert</code><code class="lua plain">(boxDummyList,insertedObjects[2]) </code></div>
+<div class="line number160 index159 alt1"><code class="lua spaces">    </code><code class="lua comments">-- Decide if object is good or bad</code></div>
+<div class="line number161 index160 alt2"><code class="lua spaces">    </code><code class="lua keyword">local</code> <code class="lua plain">decision = </code><code class="lua functions">math.random</code><code class="lua plain">() </code></div>
+<div class="line number162 index161 alt1"><code class="lua spaces">    </code><code class="lua keyword">if</code> <code class="lua plain">decision &lt;= goodPercentage </code><code class="lua keyword">then</code></div>
+<div class="line number163 index162 alt2"><code class="lua spaces">    </code><code class="lua comments">-- Object is good, assign goodColor</code></div>
+<div class="line number164 index163 alt1"><code class="lua spaces">        </code><code class="lua plain">sim.setShapeColor(insertedObjects[1],</code><code class="lua keyword">nil</code><code class="lua plain">,sim.colorcomponent_ambient_diffuse,goodColor)</code></div>
+<div class="line number165 index164 alt2"><code class="lua spaces">        </code><code class="lua functions">table.insert</code><code class="lua plain">(boolList,</code><code class="lua keyword">true</code><code class="lua plain">)</code></div>
+<div class="line number166 index165 alt1"><code class="lua spaces">    </code><code class="lua keyword">else</code></div>
+<div class="line number167 index166 alt2"><code class="lua spaces">    </code><code class="lua comments">-- Object is bad, assign random color</code></div>
+<div class="line number168 index167 alt1"><code class="lua spaces">        </code><code class="lua plain">sim.setShapeColor(insertedObjects[1],</code><code class="lua keyword">nil</code><code class="lua plain">,sim.colorcomponent_ambient_diffuse,{rand1,rand2,rand3})</code></div>
+<div class="line number169 index168 alt2"><code class="lua spaces">        </code><code class="lua functions">table.insert</code><code class="lua plain">(boolList,</code><code class="lua keyword">false</code><code class="lua plain">)</code></div>
+<div class="line number170 index169 alt1"><code class="lua spaces">    </code><code class="lua keyword">end</code></div>
+<div class="line number171 index170 alt2"><code class="lua keyword">end</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h2>w15</h2>
 <p></p>
 <script>
 var winkVideoData = {
@@ -555,7 +916,8 @@ var winkVideoData = {
 <p>「K、L」底座控制</p>
 <p>「J、H」是joint2</p>
 <p>「F、G」是joint3</p>
-<p>「P」是吸起</p><h2>w16</h2>
+<p>「P」是吸起</p>
+<h2>w16</h2>
 <p>1.已知左側綠色底座的<span> uArm </span>機械手臂<span>, </span>其基座座標原點位於絕對座標<span> (1.0, 0.25, 0), </span>啟動模擬後<span> green_suctionpad_frame </span>座標原點則位於<span> (0.22859, 0.26047, 0.36576), </span>請列出運算式說明<span>, </span>啟動模擬後<span> joint1, joint2 </span>與<span> joint3 </span>分別以逆時針旋轉<span> 5 </span>度後<span>, </span>求<span>green_suctionpad_frame </span>的絕對座標值<span>.</span><span></span></p>
 <p><span><img alt="" height="568" src="/images/w16.png" width="1008"/></span></p>
 <p>詳細請看<a href="https://gmnfuedutw-my.sharepoint.com/:b:/g/personal/40923245_gm_nfu_edu_tw/Ee_luyEdumtLvMCwO_Pev34BEKxiZOYzXvHKKuA_gkRdRQ?e=gqXi6k">w16-1</a></p>
@@ -564,3 +926,5 @@ var winkVideoData = {
 <p><span>程式碼</span></p>
 <p><span><img alt="" height="567" src="/images/w16-2.png" width="1008"/></span></p>
 <p>詳細請看<a href="https://gmnfuedutw-my.sharepoint.com/:b:/g/personal/40923245_gm_nfu_edu_tw/EeRR8yanVjtMq8JC33NDyOgB6mbC1KgfB6wlfj_ShXwQ3A?e=xm9OkK">w16-2</a></p>
+<p></p>
+<h1>期末考週</h1>
